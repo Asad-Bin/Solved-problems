@@ -87,12 +87,12 @@ int main()
     
     si(t);
     for(int i=1; i<=t; i++){
-		scanf("%lf%lf%lf%lf", &a, &b, &c, &x);
+	    scanf("%lf%lf%lf%lf", &a, &b, &c, &x);
 		
-		double p = sqrt(c*c/(1.0+1.0/x));
+	    double p = sqrt(c*c/(1.0+1.0/x));
 		
-		printf("Case %d: %0.6lf\n", i, p*a/c);
-	}
+	    printf("Case %d: %0.6lf\n", i, p*a/c);
+    }
     
     return 0;
 }
