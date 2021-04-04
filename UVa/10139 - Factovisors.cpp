@@ -125,40 +125,6 @@ void divs(ull n) {
 	//for(i=0; i<(int)divisors.size(); i++)
 		//printf("%d %d\n", divisors[i].first, divisors[i].second);
 }
-//void calc(ll n) {
-	//int cnt, i;
-	
-	//for(i=0; i<(ll)primes.size() && (primes[i]*primes[i])<=n; i++) {
-		//if(n%primes[i]==0) {
-			//cnt=0;
-			
-			//while(n%primes[i]==0) {
-				//n/=primes[i];
-				//cnt++;
-			//}
-			
-			//auto it = divisors.find(primes[i]);
-			//if(it!=divisors.end()){
-				//divisors[primes[i]] = max(0, divisors[primes[i]]-cnt);
-				//if(divisors[primes[i]]==0) divisors.erase(primes[i]);
-			//}
-		//}
-	//}
-	
-	//if(n>1) {
-		////cout << n << ' ' << divisors[n] << "\n";
-		//auto it = divisors.find(n);
-		//if(it!=divisors.end()){
-			//divisors[n]--;
-			
-			//if(divisors[n]<=0) divisors.erase(n);
-		//}
-	//}
-	
-	////printf("Number of divisors %d\n", tot);
-	////for(i=0; i<(int)divisors.size(); i++)
-		////printf("%d %d\n", divisors[i].first, divisors[i].second);
-//}
 int main()
 {
     boost_;
