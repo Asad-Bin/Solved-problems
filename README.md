@@ -1,2 +1,1 @@
-# UVA-solve-code
-Code for UVA problems I solved
+Source code collection of some of my solved problems.
