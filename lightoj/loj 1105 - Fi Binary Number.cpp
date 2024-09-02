@@ -1,5 +1,24 @@
 // . . . Bismillahir Rahmanir Rahim . . .
 
+
+Approaching the problem:
+1: Lets think about max value for which we can achieve the value. It will not cross 10^18 or 2^60;
+2: If we have some values of same number of digits and maintains the conditions of the statement, can we count them?
+3: number of values if no. of digit = x, will be at most approaximately 2^x (consists of 1 & 0).
+4: Full soln:
+	Lets precalculate number of values of particular no. of digits x, for all x from 1 to 60;
+	Then we will record prefix sum of the values. Lets say ara[i] holds the sum of counts of values with digit-count from 1 to i.
+	Now for each n from input set,
+		we find out the value of digit-count for which it exeeds n. let it be, i.
+		so we can reduce n by ara[i-1], as all of them are of values of digit-count less than i;
+		then remaining n values are of length i and only consists of 1 & 0 but no two 1 are found in consecutive position.
+		so we will now print the final ans. First two values must be "10" as per given condition.
+		from 3rd to nth position we can choose either "10" or "0".
+		we will choose "0" if number of values found if "0" choosen is greater of equal to n. and we will jump to next position.
+		otherwise it is "10"; and we will jump onto second next position.
+		
+		
+
 #include <bits/stdc++.h>
 using namespace std;
 
