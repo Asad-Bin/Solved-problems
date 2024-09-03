@@ -1,1 +1,1 @@
-Source code collection of some of my solved problems.
+Source code and editorial collections of some of my solved archive problems.
